@@ -1,0 +1,140 @@
+.profile-container{
+  padding: 20px;
+}
+
+.banner-container {
+  /* background-image: url('file:///C:/Users/hp/Downloads/643a74804b97f7001371621e.jpg'); */
+  background-size: cover;
+  height: 200px; /* Adjust height as needed */
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-bottom: 5%;
+}
+#save-btn{
+font-size: 16px;
+  border-radius: 30px;
+  width: 120px;
+  align-self: center;
+  background-color: #27599b;;
+  
+}
+.profile-labels{
+font-weight: bolder;
+font-size:medium;
+text-align: left;
+margin-left: -0.5%;
+}
+#save-container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+}
+.custom-file-upload {
+  font-size: 16px;
+  border-radius: 30px;
+  width:150px;
+  position: absolute;
+right: 10%;
+top:13%;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color:#F9BD17;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.custom-file-upload:hover {
+  background-color: #979a9d;
+}
+
+#upload-input {
+  display: none;
+}
+.change-picture-btn:hover {
+  background-color: #0069d9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.username_email{
+  color:white;
+  font-weight: bolder;
+  margin-left: 20px;
+  font-size: larger;
+}
+.user-profile img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.labels {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.experience span:first-child {
+  font-weight: bold;
+}
+
+.experience span:last-child {
+  color: #007bff;
+  cursor: pointer;
+}
+.form-control::placeholder {
+  text-align: left;
+}
+/* Style for Twitter input field */
+.ud-form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ud-text-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.basic-info--social-url-prefix--2Mkpv {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-right: none;
+  padding: 10px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.ud-text-input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.ud-text-input:focus {
+  outline: none;
+  border-color: #0077b5;
+}
+
+.heading{
+  font-weight: bolder;
+}

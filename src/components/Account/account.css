@@ -1,0 +1,91 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+#myAccountHead {
+  color: #27599b;
+  font-weight: bolder;
+}
+/* Wrapper styles */
+#details-view-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: #27599b;
+}
+
+/* Container styles */
+#details-view {
+  margin: 12px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #112b4c;
+  padding: 20px;
+  width: 500px;
+}
+
+/* Label styles */
+#details-view-label {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+#details-view-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Account info styles */
+#my-account-info-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+#my-account-info {
+  display: flex;
+  align-items: center;
+}
+
+/* Field styles */
+.account-field {
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+.account-field label {
+  font-size: smaller;
+}
+#mySave-btn {
+  background-color: #44a411;
+  margin-left: 10px;
+  color: white;
+  font-size: 15px;
+}
+#cancel-btn {
+  background-color: rgba(#44a411, 0.1);
+  font-size: 15px;
+  border: 1px solid grey;
+}
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #112b4c;
+  width: 100%;
+}
+
+/* Save options styles */
+#save-options {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+#save-options button {
+  width: fit-content;
+  padding: 1.5% 3.5%;
+  /* font-size:15px ; */
+}
