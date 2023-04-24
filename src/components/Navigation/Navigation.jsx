@@ -5,6 +5,8 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import MenuButtom from "../../share/UIElements/MenuButton/MenuButtom";
 import CartTooltip from "./CartTooltip/CartTooltip";
 import Categories from "./Categories/Categories";
@@ -27,6 +29,10 @@ const Navigation = (props) => {
   };
   const goToAccountSettings = () =>{
     navigate("./Account");
+  };
+
+  const goToMyWishList= () => {
+    navigate("./wishList");
   };
 
 
@@ -90,7 +96,10 @@ const Navigation = (props) => {
           <MenuButtom>
             <span style={{ color: "white" }}>Enrolled Courses</span>
           </MenuButtom>
-
+          <span style={{"font-size" : "24px"}}>
+            <FontAwesomeIcon icon={regularHeart} onClick={() => goToMyWishList()}/>
+          </span>
+         
           <MenuButtom>
             <RightTooltipWithStyle
               title={<CartTooltip />}

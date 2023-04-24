@@ -16,10 +16,13 @@ function SearchCourse(props) {
   );
   return (
     <div className="search-result-container">
-     
       {filteredCourses.map((course) => (
-        <SearchResult key={course.id} result ={course} handleAddToCart={props.handleAddToCart} />
-       
+        <SearchResult
+          key={course.id}
+          result={course}
+          handleAddToCart={props.handleAddToCart}
+          handleAddToWishList={props.handleAddToWishList}
+        />
       ))}
     </div>
   );

@@ -1,59 +1,55 @@
-
-.Item-box{
+.Item-box {
   border-bottom: 1px solid grey;
   padding: 1.5% 0;
   height: 30vh;
 }
 
-.item-flex-box{
+.item-flex-box {
   /* border :1px solid purple; */
   display: flex;
   height: 100%;
-  gap : 3%;
+  gap: 3%;
 }
 
-.image{
+.image {
   /* border: 1px solid green; */
   flex: 20%;
-  
+
   height: 100%;
 }
 .image img {
   height: 100%;
 }
 
-.Item-details{
-  flex : 70%;
+.Item-details {
+  flex: 70%;
   display: flex;
 }
-.item-flex-1
-{
-  flex:40%;
+.item-flex-1 {
+  flex: 40% 1;
   display: flex;
   flex-direction: column;
-  gap: 8%; ;
+  gap: 8%;
+  font-size: 13px;
 }
-.item-flex-2
-{
+.item-flex-2 {
   flex: 20% 1;
-    padding: 50px 50px;
+  padding: 50px 50px;
 }
-#item-inCart-price{
+#item-inCart-price {
   /* border: 1px solid plum; */
   height: 50%;
   font-size: 20px;
   font-weight: bold;
 }
 
- 
-.item-flex-3
-{
+.item-flex-3 {
   height: 8rem;
   flex: 30% 1;
   /* background: rgb(240, 167, 167); */
   padding: 0% 0%;
 }
-.item-flex-3 #Remove-Item-Btn{
+.item-flex-3 #Remove-Item-Btn {
   margin: auto;
   height: 80%;
   width: 100%;
@@ -63,6 +59,7 @@
   border-radius: 8px;
   font-weight: bold;
   margin-top: 20%;
+  font-size: 16px;
 }
 
 .checked {

@@ -1,29 +1,25 @@
 
 import { Star, StarHalf } from "@mui/icons-material";
-import "./courseCard.css";
+import "./Favorites.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
-import StarRating from "../../Ratings";
 
-function SearchResult(props) {
+function FavoriteItem(props) {
   const [isClicked, setIsClicked] = useState(false);
-  const [heartIcon, setHeartIcon] = useState(regularHeart);
+  const [heartIcon, setHeartIcon] = useState(solidHeart);
 
   const handleAddToCart = () => {
     setIsClicked(true);
     props.handleAddToCart(props.result);
   };
 
-  const toggleHeartIcon = () => {
-    if (heartIcon === regularHeart) {
-      setHeartIcon(solidHeart);
-      props.handleAddToWishList(props.result);
-    } else {
-      setHeartIcon(regularHeart);
-    }
-  };
+
+  const removeFromFavorites= ()=>{
+    setHeartIcon(regularHeart);
+    props.unFavorite();
+  }
 
   return (
     <>
@@ -43,11 +39,11 @@ function SearchResult(props) {
                 <h2>{props.result.title}</h2>
                 <p>Instructor: {props.result.instructor}</p>
                 <p>Duration: {props.result.duration}</p>
-                <p><StarRating value={props.result.rating}/></p>
-                {/* <p>Rating: {props.result.rating}</p> */}
+                <p>Rating: {props.result.rating}</p>
                 <div id="search-card-price-flex">
                   <span className="course-price">Price: {props.result.price}</span>
-                  <span id="search-card-heart-icon" onClick={toggleHeartIcon}>
+                  <span id="search-card-heart-icon" onClick={()=>removeFromFavorites()}>
+               
                     <FontAwesomeIcon icon={heartIcon} />
                   </span>
                 </div>
@@ -63,4 +59,4 @@ function SearchResult(props) {
   );
 }
 
-export default SearchResult;
+export default FavoriteItem;

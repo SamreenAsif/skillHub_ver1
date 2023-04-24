@@ -43,6 +43,7 @@ function CartPage(props) {
                   price={item.price}
                   duration = {item.duration}
                   instructor = {item.instructor}
+                  rating = {item.rating}
                   onRemove={() => removeItem(index)}
                 />
               </li>

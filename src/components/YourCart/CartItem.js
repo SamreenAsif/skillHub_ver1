@@ -1,5 +1,6 @@
 import React from "react";
 import "./CartItem.css";
+import StarRating from "../Ratings";
 
 function CartItem(props) {
  
@@ -22,7 +23,8 @@ function CartItem(props) {
             <h3>{props.title}</h3>
             <span>{props.instructor}</span>
             <div className="rating">
-              {stars}
+              {/* {stars} */}
+              <StarRating value={props.rating} />
             </div>
             <span>{props.duration}</span>
           </div>
